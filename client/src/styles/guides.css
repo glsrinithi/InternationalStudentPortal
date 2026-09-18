@@ -1,0 +1,11 @@
+﻿
+/* Override with pastel orange hover */
+.guide-card:hover {
+  transform: translateY(-5px);
+  background-color: #fff4ec;
+  border: 1.5px solid #ffd3b8;
+  box-shadow: 0 14px 32px rgba(255, 107, 53, 0.15);
+}
+.guide-card:hover .guide-card-title {
+  color: #b34a1a;
+}

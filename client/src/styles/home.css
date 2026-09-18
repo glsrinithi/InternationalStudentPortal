@@ -1,0 +1,228 @@
+.hero {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffe4d1 100%);
+  padding: 64px 24px;
+}
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.hero-badge {
+  display: inline-block;
+  background: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary);
+  box-shadow: var(--shadow);
+  margin-bottom: 18px;
+}
+.hero-text h1 {
+  font-size: 44px;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+.hero-sub {
+  font-size: 17px;
+  color: var(--muted);
+  margin-bottom: 26px;
+}
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.hero-art-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.hero-art-card span {
+  background: #f6f7fb;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+.section-alt {
+  background: #f9fafb;
+  max-width: 100%;
+}
+.section-alt > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.section-sub {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 32px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-cta {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.feature-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.feature-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.feature-card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.feature-card p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.mini-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+.mini-card span {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 8px;
+}
+.mini-card h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.mini-card p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.cat-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.cat-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+.cat-icon {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+.cat-label {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.emergency-banner {
+  background: #fef2f2;
+  border-top: 1px solid #fecaca;
+  border-bottom: 1px solid #fecaca;
+  padding: 26px 24px;
+}
+.emergency-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.emergency-icon {
+  font-size: 36px;
+}
+.emergency-inner h3 {
+  color: #991b1b;
+  margin-bottom: 3px;
+}
+.emergency-inner p {
+  color: #7f1d1d;
+  font-size: 14px;
+}
+
+.official-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--primary);
+  transition: transform 0.15s;
+}
+.official-card:hover {
+  transform: translateY(-3px);
+}
+.official-card h4 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.official-card p {
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 600;
+}
+/* Home-specific hover polish */
+.cat-tile:hover .cat-icon {
+  transform: scale(1.15);
+  transition: transform 0.22s ease;
+}
+
+.cat-tile .cat-icon {
+  transition: transform 0.22s ease;
+}
+
+.official-card:hover {
+  border-left: 4px solid #b34a1a;
+  padding-left: 26px;
+}
+
+.emergency-banner {
+  transform: none !important;
+}
+.emergency-banner:hover {
+  transform: none !important;
+  background: #fef2f2;
+}
